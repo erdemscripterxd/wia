@@ -27,12 +27,12 @@ local Window = Rayfield:CreateWindow({
 })
 
 local MainTab = Window:CreateTab("Animasyon", nil) -- Title, Image
-local MainSection = MainTab:CreateSection("Animasyon ama her ölmene yeniden açıcan")
+local MainSection = MainTab:CreateSection("Berke Pro !")
 
 local Tab = Window:CreateTab("MM2", nil) -- Title, Image
 local Section = Tab:CreateSection("MM2 İÇİN")
 
-local Tab2 = Window:CreateTab("Diğer scriptler", nil) -- Title, Image
+local Tab2 = Window:CreateTab("Bakımda", nil) -- Title, Image
 local Section2 = Tab:CreateSection("berke pro")
 
 Rayfield:Notify({
@@ -59,58 +59,25 @@ local among = loadstring(game:HttpGet("https://raw.githubusercontent.com/erdemsc
 local Button = MainTab:CreateButton({
    Name = "Zombie",
    Callback = function()
-local Animate = game.Players.LocalPlayer.Character.Animate
-		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616158929"
-		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616160636"
-		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616168032"
-		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616163682"
-		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616161997"
-		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616156119"
-		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616157476"
-		game.Players.LocalPlayer.Character.Humanoid.Jump = true   end,
+local among = loadstring(game:HttpGet("https://raw.githubusercontent.com/erdemscripterxd/berkepro/main/zombie", true)) while not sus do wait(1) among() end   end,
 })
 
 local Button = MainTab:CreateButton({
    Name = "Levitation",
    Callback = function()
-local Animate = game.Players.LocalPlayer.Character.Animate
-		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=616006778"
-		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=616008087"
-		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=616013216"
-		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=616010382"
-		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=616008936"
-		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=616003713"
-		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=616005863"
-		game.Players.LocalPlayer.Character.Humanoid.Jump = true   end,
+local among = loadstring(game:HttpGet("https://raw.githubusercontent.com/erdemscripterxd/berkepro/main/Levitation", true)) while not sus do wait(1) among() end   end,
 })
 
 local Button = MainTab:CreateButton({
    Name = "Bubbly",
    Callback = function()
-local Animate = game.Players.LocalPlayer.Character.Animate
-		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=910004836"
-		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=910009958"
-		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=910034870"
-		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=910025107"
-		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=910016857"
-		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=910001910"
-		Animate.swimidle.SwimIdle.AnimationId = "http://www.roblox.com/asset/?id=910030921"
-		Animate.swim.Swim.AnimationId = "http://www.roblox.com/asset/?id=910028158"
-		game.Players.LocalPlayer.Character.Humanoid.Jump = true   end,
-        })
+local among = loadstring(game:HttpGet("https://raw.githubusercontent.com/erdemscripterxd/berkepro/main/Bubbly", true)) while not sus do wait(1) among() end   end,
+})
 
 local Button = MainTab:CreateButton({
    Name = "Ninja",
    Callback = function()
-local Animate = game.Players.LocalPlayer.Character.Animate
-		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=656117400"
-		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=656118341"
-		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=656121766"
-		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=656118852"
-		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=656117878"
-		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=656114359"
-		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=656115606"
-		game.Players.LocalPlayer.Character.Humanoid.Jump = true   end,
+local among = loadstring(game:HttpGet("https://raw.githubusercontent.com/erdemscripterxd/berkepro/main/Ninja", true)) while not sus do wait(1) among() end   end,
 })
 
 local Button = Tab:CreateButton({
