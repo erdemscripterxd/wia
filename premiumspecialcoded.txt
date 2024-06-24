@@ -13,7 +13,7 @@ Window = Library:Create({
 	DiscordLink = nil,
 })
 
-Window:ChangeTogglekey(Enum.KeyCode.RightShift)
+Window:ChangeTogglekey(Enum.KeyCode.F4)
 
 local Tab = Window:Tab({
 	Name = "Main",
