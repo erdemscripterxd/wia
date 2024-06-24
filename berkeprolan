@@ -53,7 +53,7 @@ Rayfield:Notify({
 local Button = MainTab:CreateButton({
    Name = "Vampir",
    Callback = function()
-local among = loadstring(game:HttpGet("https://raw.githubusercontent.com/erdemscripterxd/berkepro/main/fa", true)) while not sus do wait(1) among() end   end,
+local among = loadstring(game:HttpGet("https://raw.githubusercontent.com/erdemscripterxd/berkepro/main/vampireee", true)) while not sus do wait(1) among() end   end,
 })
 
 local Button = MainTab:CreateButton({
