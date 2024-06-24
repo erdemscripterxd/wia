@@ -1,9 +1,56 @@
-local Animate = game.Players.LocalPlayer.Character.Animate
-		Animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=656117400"
-		Animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=656118341"
-		Animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=656121766"
-		Animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=656118852"
-		Animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=656117878"
-		Animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=656114359"
-		Animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=656115606"
-		game.Players.LocalPlayer.Character.Humanoid.Jump = false
+local player = game.Players.LocalPlayer
+
+if player.Character and player.Character:FindFirstChildOfClass("Humanoid").RigType == Enum.HumanoidRigType.R6 then
+    return
+end
+
+local function WaitForHealth()
+    local character = player.Character or player.CharacterAdded:Wait()
+    local humanoid = character:WaitForChild("Humanoid")
+    while humanoid.Health <= 2 do
+        task.wait(0.2)
+    end
+end
+
+local function AntiGoofy()
+    local character = player.Character or player.CharacterAdded:Wait()
+    local humanoid = character:FindFirstChildOfClass("Humanoid")
+    if humanoid then
+        for _, track in pairs(humanoid:GetPlayingAnimationTracks()) do
+            track:Stop()
+        end
+    end
+
+    local animate = character:WaitForChild("Animate")
+  animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=656117400"
+		animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=656118341"
+		animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=656121766"
+		animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=656118852"
+		animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=656117878"
+		animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1083439238"
+		animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=656115606"
+end
+
+local function setAnimations()
+    local character = player.Character or player.CharacterAdded:Wait()
+    local animate = character:WaitForChild("Animate")
+   animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=656117400"
+		animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=656118341"
+		animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=656121766"
+		animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=656118852"
+		animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=656117878"
+		animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1083439238"
+		animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=656115606"
+end
+
+player.CharacterAdded:Connect(function(character)
+    WaitForHealth()
+    AntiGoofy()
+    setAnimations()
+end)
+
+if player.Character then
+    WaitForHealth()
+    AntiGoofy()
+    setAnimations()
+end
