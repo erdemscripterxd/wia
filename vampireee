@@ -22,24 +22,24 @@ local function AntiGoofy()
     end
 
     local animate = character:WaitForChild("Animate")
-    animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=0"
-    animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=0"
-    animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=0"
-    animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=0"
+    animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1083462077"
+    animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1083455352"
+    animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1083443587"
+    animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1083439238"
     animate.swim.Swim.AnimationId = "http://www.roblox.com/asset/?id=0"
     animate.swimidle.SwimIdle.AnimationId = "http://www.roblox.com/asset/?id=0"
-    animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=0"
-    animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=0"
-    animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=0"
+    animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1083473930"
+    animate.idle.Animation1.AnimationId = "http://www.roblox.com/asset/?id=1083445855"
+    animate.idle.Animation2.AnimationId = "http://www.roblox.com/asset/?id=1083450166"
 end
 
 local function setAnimations()
     local character = player.Character or player.CharacterAdded:Wait()
     local animate = character:WaitForChild("Animate")
     animate.run.RunAnim.AnimationId = "http://www.roblox.com/asset/?id=1083462077"
-    animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=5319841935"
-    animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=5319839762"
-    animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=5319816685"
+    animate.jump.JumpAnim.AnimationId = "http://www.roblox.com/asset/?id=1083455352"
+    animate.fall.FallAnim.AnimationId = "http://www.roblox.com/asset/?id=1083443587"
+    animate.climb.ClimbAnim.AnimationId = "http://www.roblox.com/asset/?id=1083439238"
     animate.swim.Swim.AnimationId = "http://www.roblox.com/asset/?id=10921243048"
     animate.swimidle.SwimIdle.AnimationId = "http://www.roblox.com/asset/?id=10921244018"
     animate.walk.WalkAnim.AnimationId = "http://www.roblox.com/asset/?id=1083473930"
