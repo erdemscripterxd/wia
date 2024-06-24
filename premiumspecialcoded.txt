@@ -115,19 +115,6 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/erdemscripterxd/berke
 	end,
 })
 
-local Toggle = Section1:Toggle({
-	Name = "Bunu çalıştırma gereksiz",
-	Default = false,
-	Callback = function(Bool)
-		Library:Notify({
-			Name = "Toggle",
-			Text = tostring(Bool),
-			Icon = "rbxassetid://11401835376",
-			Duration = 3,
-		})
-	end,
-})
-
 local Section2 = Tab:Section({
 	Name = "MM2 Scriptleri",
 })
