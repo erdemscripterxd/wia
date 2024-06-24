@@ -90,6 +90,19 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/erdemscripterxd/berke
 })
 
 local Button = Section1:Button({
+	Name = "Bolt",
+	Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/erdemscripterxd/berkepro/main/BOLT'))()
+		Library:Notify({
+			Name = "Button",
+			Text = "Çalıştırıldı",
+			Icon = "rbxassetid://11401835376",
+			Duration = 3,
+		})
+	end,
+})
+
+local Button = Section1:Button({
 	Name = "Vampir",
 	Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/erdemscripterxd/berkepro/main/vampireee'))()
