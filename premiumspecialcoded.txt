@@ -51,9 +51,35 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/erdemscripterxd/berke
 })
 
 local Button = Section1:Button({
+	Name = "Mage",
+	Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/erdemscripterxd/berkepro/main/mage'))()
+		Library:Notify({
+			Name = "Button",
+			Text = "Çalıştırıldı",
+			Icon = "rbxassetid://11401835376",
+			Duration = 3,
+		})
+	end,
+})
+
+local Button = Section1:Button({
 	Name = "Levitation",
 	Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/erdemscripterxd/berkepro/main/Levitation'))()
+		Library:Notify({
+			Name = "Button",
+			Text = "Çalıştırıldı",
+			Icon = "rbxassetid://11401835376",
+			Duration = 3,
+		})
+	end,
+})
+
+local Button = Section1:Button({
+	Name = "Adidas animasyon",
+	Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/erdemscripterxd/berkepro/main/adidas'))()
 		Library:Notify({
 			Name = "Button",
 			Text = "Çalıştırıldı",
