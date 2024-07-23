@@ -141,6 +141,19 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/erdemscripterxd/berke
 	end,
 })
 
+local Button = Section1:Button({
+	Name = "Kurt adam",
+	Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/erdemscripterxd/berkepro/main/Werewolf'))()
+		Library:Notify({
+			Name = "Button",
+			Text = "Çalıştırıldı",
+			Icon = "rbxassetid://11401835376",
+			Duration = 3,
+		})
+	end,
+})
+
 local Section2 = Tab:Section({
 	Name = "MM2 Scriptleri",
 })
