@@ -7,7 +7,7 @@
 ]]
  
 --=Important=--
-_G.Height = true
+_G.Height = false
 --=False = height is kinda high above the ground (No Reset Required)=--
 --=True = height is lowered alot but reset is required=--
  
